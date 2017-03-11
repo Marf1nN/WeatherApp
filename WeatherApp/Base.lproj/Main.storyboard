@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" text="17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6I-uc-PMu">
+                                <rect key="frame" x="33" y="89" width="283" height="79"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="63"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7v-ex-Tpp">
+                                <rect key="frame" x="41" y="194" width="275" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="today " textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRg-Oy-gZ5">
+                                <rect key="frame" x="33" y="39" width="270" height="35"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="TK4-WW-sqe">
+                                <rect key="frame" x="67" y="241" width="240" height="227"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="state" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rH-Yv-hns">
+                                <rect key="frame" x="126" y="537" width="123" height="27"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2rH-Yv-hns" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="Drn-uy-KgU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TK4-WW-sqe" secondAttribute="trailing" constant="52" id="F1t-KW-AW9"/>
+                            <constraint firstItem="yRg-Oy-gZ5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="FPC-bU-G2P"/>
+                            <constraint firstItem="B7v-ex-Tpp" firstAttribute="top" secondItem="j6I-uc-PMu" secondAttribute="bottom" constant="26" id="Lbv-g6-gM5"/>
+                            <constraint firstItem="TK4-WW-sqe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="NU1-Eh-eKv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2rH-Yv-hns" secondAttribute="trailing" constant="96" id="R6D-oN-uRO"/>
+                            <constraint firstItem="j6I-uc-PMu" firstAttribute="top" secondItem="yRg-Oy-gZ5" secondAttribute="bottom" constant="15" id="Ud4-fQ-dmw"/>
+                            <constraint firstItem="B7v-ex-Tpp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="bOb-2o-5Jh"/>
+                            <constraint firstItem="2rH-Yv-hns" firstAttribute="top" secondItem="TK4-WW-sqe" secondAttribute="bottom" constant="69" id="rLd-xz-qsx"/>
+                            <constraint firstItem="yRg-Oy-gZ5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="sD5-98-rcM"/>
+                            <constraint firstItem="j6I-uc-PMu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="sdJ-UB-Hxq"/>
+                            <constraint firstItem="TK4-WW-sqe" firstAttribute="top" secondItem="B7v-ex-Tpp" secondAttribute="bottom" constant="26" id="uXx-XA-zYB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="yRg-Oy-gZ5" id="sCY-ms-W73"/>
+                        <outlet property="locationLabel" destination="B7v-ex-Tpp" id="zci-d2-E93"/>
+                        <outlet property="tempLabel" destination="j6I-uc-PMu" id="Q0e-bJ-NFS"/>
+                        <outlet property="weatherImage" destination="TK4-WW-sqe" id="Oxk-Ah-uj8"/>
+                        <outlet property="weatherLabel" destination="2rH-Yv-hns" id="DP6-RX-Qrt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-838" y="-249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0" width="16" height="16"/>
+    </resources>
+</document>
